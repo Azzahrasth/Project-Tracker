@@ -61,7 +61,7 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal.
     ```bash
     php artisan migrate
     ```
-    *(Ini akan membuat tabel `projects` dan `tasks`.)*
+    *(untuk membuat tabel `projects` dan `tasks`.)*
 
 5.  **Jalankan Aplikasi:**
     ```bash
