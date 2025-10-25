@@ -4,7 +4,7 @@
 [![Bootstrap 5](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap)](https://getbootstrap.com/)
 [![jQuery & AJAX](https://img.shields.io/badge/JavaScript-jQuery%20%26%20AJAX-0769AD?style=for-the-badge&logo=jquery)](https://jquery.com/)
 
-Mini Aplikasi Project Tracker adalah solusi *Single Page Application* (SPA) sederhana yang dibuat menggunakan Laravel Blade dan AJAX untuk mengelola daftar proyek dan tugas (task) secara *realtime* tanpa perlu *page reload*.
+Mini Aplikasi Project Tracker adalah solusi **Single Page Application (SPA)** sederhana yang dibuat menggunakan Laravel Blade dan AJAX untuk mengelola daftar proyek dan tugas (*task*) secara **realtime** tanpa perlu *page reload*.
 
 Aplikasi ini secara otomatis menghitung *Completion Progress* dan *Status* Project berdasarkan bobot dan status setiap Task di dalamnya.
 
@@ -17,11 +17,11 @@ Aplikasi ini dikembangkan berdasarkan prinsip *Realtime Data Manipulation* dan *
 1.  **CRUD Project & Task:** Fungsionalitas penuh untuk membuat, membaca, memperbarui, dan menghapus Project dan Task.
 2.  **Perhitungan Progress Dinamis:** *Completion Progress* Project dihitung otomatis berdasarkan total bobot Task yang berstatus 'Done'.
     $$\text{Progress} = \frac{\text{Total Bobot Task Done}}{\text{Total Bobot Seluruh Task}} \times 100$$
-3.  **Status Project Otomatis:** Status Project ditentukan berdasarkan hierarki status Task:
+3.  **Status Project Otomatis:** Status Project ditentukan berdasarkan hierarki prioritas status Task:
     * Jika **Semua** Task **Done** $\rightarrow$ Project **Done**.
     * Jika **Ada minimal satu** Task **In Progress atau Done** $\rightarrow$ Project **In Progress**.
     * Jika **Semua** Task **Draft** $\rightarrow$ Project **Draft**.
-4.  **Realtime UI:** Menggunakan **AJAX (jQuery)** untuk semua operasi CRUD (Add, Edit, Delete) Project dan Task, memungkinkan pembaruan *Progress Bar* dan Status di DOM secara instan tanpa memuat ulang halaman.
+4.  **Realtime UI:** Menggunakan **AJAX (jQuery)** untuk semua operasi CRUD, memungkinkan pembaruan *Progress Bar* dan Status di DOM secara instan.
 5.  **Notifikasi Modern:** Menggunakan **SweetAlert2** untuk konfirmasi penghapusan dan notifikasi validasi/sukses yang profesional.
 
 ---
@@ -32,10 +32,9 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal.
 
 ### Prasyarat
 
-* PHP (8.1+)
-* Composer
-* MySQL/MariaDB
-* Node.js & npm (untuk aset front-end dasar)
+* **PHP (8.1+)**
+* **Composer**
+* **MySQL/MariaDB**
 
 ### Langkah-langkah Instalasi
 
@@ -61,7 +60,7 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal.
     ```bash
     php artisan migrate
     ```
-    *(untuk membuat tabel `projects` dan `tasks`.)*
+    *(Ini akan membuat tabel `projects` dan `tasks`.)*
 
 5.  **Jalankan Aplikasi:**
     ```bash
